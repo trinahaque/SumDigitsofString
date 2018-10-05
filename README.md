@@ -29,3 +29,6 @@ To run the `sumDigitString.py` file with other inputs, call the function in the 
 `print (sumDigitString("-f", "fileLocation"))`
 3. If it's a hex input, type in "-x" as the first input, the hex string inside a quote as the second input. Example below:
 `print (sumDigitString("-x", "abc123"))`
+
+## Note to the reader
+When I converted hexstring "abc123" to int, I got 11256099 which added up to 33. I checked the int value in other places as well and received the same number
