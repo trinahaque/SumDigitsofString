@@ -20,3 +20,12 @@ python3 sumDigitString.py
 ```
 python3 unitTest.py
 ```
+
+## Assumptions and Instructions
+To run the `sumDigitString.py` file with other inputs, call the function in the main and pass inputs accordingly. Wrap it inside `print ()` to print the output in the console
+1. If it's a string input, type in the string wrapped inside a quote as an input. Example below:
+`print (sumDigitString("abc123"))`
+2. If it's a file input, type in "-f" as the first input, the location of the file inside a quote as the second input. Example below:
+`print (sumDigitString("-f", "fileLocation"))`
+3. If it's a hex input, type in "-x" as the first input, the hex string inside a quote as the second input. Example below:
+`print (sumDigitString("-x", "abc123"))`
