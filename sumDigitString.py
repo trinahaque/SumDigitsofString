@@ -1,3 +1,5 @@
+# this function takes a string, a file or a hex value as an input. 
+# It returns the sum of the digits in the input.
 def sumDigitString(input1, input2=None):
     if input1 == "-f" and input2 != None:
         file = open(input2, "r")
@@ -12,7 +14,8 @@ def sumDigitString(input1, input2=None):
     else:
         return None
     return result
-        
+
+# this function takes a string as an input and returns the sum of the digits in the string.
 def findSum(string):
     sum = 0
     for char in string:
@@ -20,6 +23,20 @@ def findSum(string):
             sum += int(char)
     return sum
 
-inputFile = "files.txt"
-x = sumDigitString("-f", inputFile)
-print (x)
+# the main calls various function with different test cases
+if __name__ == "__main__":
+    filename = "files.txt"
+    output = sumDigitString("-f", filename)
+    print (output)
+
+    output = sumDigitString("-x", "abc123")
+    print (output)
+
+    output = sumDigitString("abc123")
+    print (output)
+
+    output = sumDigitString("abc")
+    print (output)
+
+    output = sumDigitString(123)
+    print (output)

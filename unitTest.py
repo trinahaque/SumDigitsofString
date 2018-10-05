@@ -18,6 +18,10 @@ class TestSumDigitStrings(unittest.TestCase):
     def test_file(self):
         self.assertEqual(sumDigitString("-f", "files.txt"), 6)
 
+    # tests a invalid input
+    def test_invalid(self):
+        self.assertEqual(sumDigitString(123), None)
+
 
 if __name__ == "__main__":
     unittest.main()
